@@ -1,0 +1,20 @@
+.live-demo {
+    padding: 60px 20px;
+    position: relative;
+    background: #25282A;
+    min-height: 100vh;
+    text-align: center;
+}
+.video-bg { /* Same as hero.css */ }
+canvas { /* Same as hero.css */ }
+.demo-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.live-demo h2 { /* ... */ }
+.demo-container { /* ... */ }
+#editor { /* ... */ }
+#output { /* ... */ }
+.run-btn { /* ... */ }
