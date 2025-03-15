@@ -28,6 +28,12 @@
         </video>
         <canvas id="particles"></canvas>
         <div class="hero-content fade-in">
+            <div class="hero-content fade-in">
+                <img src="images/ganesh-photo.jpg" alt="Ganesh A." class="profile-pic">
+                <h1>Ganesh A.</h1>
+                <p id="greeting"></p>
+                <a href="#projects" class="cta">Explore My Work</a>
+            </div>
             <h1>Ganesh A.</h1>
             <p id="greeting"></p>
             <a href="#projects" class="cta">Explore My Work</a>
@@ -190,10 +196,12 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="fade-in">Get in Touch</h2>
-        <p class="fade-in">
-            Want to collaborate or just say hi? Reach out at 
-            <a href="mailto:ganesh.a@example.com">ganesh.a@example.com</a>.
-        </p>
+        <form action="https://formspree.io/f/your-email" method="POST" class="contact-form fade-in">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="cta">Send Message</button>
+        </form>
     </section>
 
     <!-- Footer -->
@@ -234,7 +242,6 @@
             }
         };
 
-        // Scroll animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
