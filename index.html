@@ -5,136 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganesh A. - Software Engineer</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <i class="fas fa-code"></i>
+            <span>Ganesh</span>
+        </div>
+        <div class="navbar-menu">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-contact">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ganesh145@gmail.com">ganesh145@gmail.com</a>
+        </div>
     </nav>
-    <div class="toggle" onclick="toggleTheme()">🌙</div>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <video class="video-bg" autoplay muted loop id="background-video">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-matrix-code-abstract-background-32117-large.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <canvas id="particles"></canvas>
-        <div class="hero-content fade-in">
-            <div class="hero-content fade-in">
-                <img src="images/ganesh-photo.jpg" alt="Ganesh A." class="profile-pic">
-                <h1>Ganesh A.</h1>
-                <p id="greeting"></p>
-                <a href="#projects" class="cta">Explore My Work</a>
-            </div>
-            <h1>Ganesh A.</h1>
-            <p id="greeting"></p>
-            <a href="#projects" class="cta">Explore My Work</a>
+        <div class="hero-content">
+            <h1>Welcome</h1>
+            <h2>I’m Ganesh, a passionate <span>Software Engineer</span> building scalable solutions.</h2>
+            <p>With expertise in C#, .NET, Azure, and Flutter, I craft innovative web and mobile applications.</p>
+            <a href="#contact" class="btn-primary">Get in Touch</a>
         </div>
-        <div class="scroll-down fade-in">↓</div>
-        <div class="video-toggle" onclick="toggleVideo()">⏯️</div>
+        <div class="hero-image">
+            <div class="avatar">
+                <img src="https://placehold.co/400x400?text=Your+Photo" alt="Ganesh A.">
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <h2 class="fade-in">About Me</h2>
-        <p class="fade-in">
-            I'm Ganesh A., a Software Engineer based in India. I hold a B.Tech in Information Technology from Panimalar Engineering College (2019–2023) and am Microsoft Azure Fundamentals (AZ-900) certified. 
-            I currently work at UB Technology Innovations, specializing in C#, .NET Core, ASP.NET MVC, Web API, and SQL Server for backend development, alongside HTML, CSS, jQuery, and Flutter for frontend and mobile solutions. 
-            I’m passionate about building scalable, efficient applications and exploring cloud technologies like Azure. In my free time, I dive into new tech trends and mobile app development.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2 class="fade-in">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item fade-in">
-                <i class="fab fa-cuttlefish"></i>
-                <p>C#</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fab fa-dot-net"></i>
-                <p>.NET Core</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fas fa-server"></i>
-                <p>ASP.NET MVC</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fas fa-cloud"></i>
-                <p>ASP.NET Web API</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fas fa-database"></i>
-                <p>SQL Server</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fab fa-html5"></i>
-                <p>HTML</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fab fa-js"></i>
-                <p>jQuery</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fab fa-flutter"></i>
-                <p>Flutter</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fab fa-dart"></i>
-                <p>Dart</p>
-            </div>
-            <div class="skill-item fade-in">
-                <i class="fab fa-microsoft"></i>
-                <p>Azure</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Based in India, I hold a B.Tech in Information Technology from Panimalar Engineering College (2019–2023). Currently, I work at UB Technology Innovations, where I develop scalable web and mobile solutions using C#, .NET Core, ASP.NET MVC, Web API, SQL Server, Flutter, and Azure. I’m passionate about cloud technology and clean code, and I enjoy exploring new frameworks in my free time.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span>2+</span>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <span>AZ-900</span>
+                        <p>Azure Certified</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section (Vertical Timeline, Present to Past) -->
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-cuttlefish"></i><p>C#</p></div>
+                <div class="skill-card"><i class="fab fa-dot-net"></i><p>.NET Core</p></div>
+                <div class="skill-card"><i class="fas fa-server"></i><p>ASP.NET MVC</p></div>
+                <div class="skill-card"><i class="fas fa-cloud"></i><p>ASP.NET Web API</p></div>
+                <div class="skill-card"><i class="fas fa-database"></i><p>SQL Server</p></div>
+                <div class="skill-card"><i class="fab fa-html5"></i><p>HTML</p></div>
+                <div class="skill-card"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+                <div class="skill-card"><i class="fab fa-js"></i><p>jQuery</p></div>
+                <div class="skill-card"><i class="fab fa-flutter"></i><p>Flutter</p></div>
+                <div class="skill-card"><i class="fab fa-dart"></i><p>Dart</p></div>
+                <div class="skill-card"><i class="fab fa-microsoft"></i><p>Azure</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
     <section class="experience" id="experience">
-        <h2 class="fade-in">Experience</h2>
-        <div class="experience-timeline">
-            <div class="experience-line"></div>
-            <div class="experience-items">
-                <div class="experience-item fade-in">
-                    <div class="content">
-                        <div class="date">Sep 2023 - Present</div>
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <h3>Software Engineer</h3>
-                        <p>UB Technology Innovations - Developing scalable web applications using C#, .NET Core, ASP.NET MVC, Web API, and SQL Server, with a focus on Azure integration.</p>
+                        <p class="timeline-date">Sep 2023 - Present | UB Technology Innovations</p>
+                        <p>Developing scalable web applications using C#, .NET Core, ASP.NET MVC, Web API, and SQL Server, with Azure integration.</p>
                     </div>
                 </div>
-                <div class="experience-item fade-in">
-                    <div class="content">
-                        <div class="date">Oct 2023 - Sep 2024</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <h3>Junior Software Engineer</h3>
-                        <p>UB Technology Innovations - Contributed to optimizing database queries and UI enhancements with .NET Core Web API and jQuery.</p>
+                        <p class="timeline-date">Oct 2023 - Sep 2024 | UB Technology Innovations</p>
+                        <p>Optimized database queries and enhanced UI with .NET Core Web API and jQuery.</p>
                     </div>
                 </div>
-                <div class="experience-item fade-in">
-                    <div class="content">
-                        <div class="date">Aug 2023 - Sep 2023</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <h3>Software Engineer Trainee</h3>
-                        <p>UB Technology Innovations - Trained in full-stack development with .NET Core MVC and Flutter.</p>
+                        <p class="timeline-date">Aug 2023 - Sep 2023 | UB Technology Innovations</p>
+                        <p>Trained in full-stack development with .NET Core MVC and Flutter.</p>
                     </div>
                 </div>
-                <div class="experience-item fade-in">
-                    <div class="content">
-                        <div class="date">Feb 2023 - Jul 2023</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <h3>Software Engineer Intern</h3>
-                        <p>UB Technology Innovations - Worked on developing backend APIs with C# and .NET Core.</p>
+                        <p class="timeline-date">Feb 2023 - Jul 2023 | UB Technology Innovations</p>
+                        <p>Developed backend APIs with C# and .NET Core.</p>
                     </div>
                 </div>
             </div>
@@ -143,16 +130,12 @@
 
     <!-- Certifications Section -->
     <section class="certifications" id="certifications">
-        <h2 class="fade-in">Certifications</h2>
-        <div class="certifications-timeline">
-            <div class="certifications-line"></div>
-            <div class="certifications-items">
-                <div class="certification-item fade-in">
-                    <div class="content">
-                        <div class="date">Dec 2023</div>
-                        <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
-                        <p>Certified in foundational Azure concepts, cloud services, and basic administration.</p>
-                    </div>
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <i class="fab fa-microsoft"></i>
+                    <p>Microsoft Azure Fundamentals (AZ-900) - Dec 2023</p>
                 </div>
             </div>
         </div>
@@ -160,88 +143,61 @@
 
     <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2 class="fade-in">Projects</h2>
-        <div class="project-container">
-            <div class="project-card fade-in" onclick="openModal('ai-chatbot')">
-                <img src="https://placehold.co/300x150?text=AI+Chatbot" alt="AI Chatbot">
-                <h3>AI Chatbot</h3>
-                <p>A conversational AI built with NLP.</p>
-                <div class="tech">Python, TensorFlow</div>
-            </div>
-            <div class="project-card fade-in" onclick="openModal('task-manager')">
-                <img src="https://placehold.co/300x150?text=Task+Manager" alt="Task Manager">
-                <h3>Task Manager</h3>
-                <p>A sleek app for productivity.</p>
-                <div class="tech">React, Node.js</div>
-            </div>
-        </div>
-        <div id="ai-chatbot" class="modal">
-            <div class="modal-content fade-in">
-                <span class="close-btn" onclick="closeModal('ai-chatbot')">×</span>
-                <h3>AI Chatbot</h3>
-                <p>A conversational AI built with natural language processing and machine learning.</p>
-                <div class="tech">Python, TensorFlow, NLTK</div>
-            </div>
-        </div>
-        <div id="task-manager" class="modal">
-            <div class="modal-content fade-in">
-                <span class="close-btn" onclick="closeModal('task-manager')">×</span>
-                <h3>Task Manager</h3>
-                <p>A sleek app for productivity and task tracking.</p>
-                <div class="tech">React, Node.js, MongoDB</div>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250?text=E-Commerce+Platform" alt="E-Commerce Platform">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A scalable online store with user authentication, product catalog, and payment integration via Stripe, deployed on Azure.</p>
+                    <div class="tech-stack">C#, ASP.NET MVC, SQL Server, Azure, Stripe API</div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250?text=Fitness+Tracker" alt="Fitness Tracker">
+                    <h3>Fitness Tracker App</h3>
+                    <p>A cross-platform app for workout and calorie tracking with Firebase and Google Fit integration.</p>
+                    <div class="tech-stack">Flutter, Dart, Firebase, Google Fit API</div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250?text=Task+API+Suite" alt="Task API Suite">
+                    <h3>Task Management API Suite</h3>
+                    <p>An API suite with CRUD operations, jQuery dashboard, and Azure AD authentication.</p>
+                    <div class="tech-stack">C#, .NET Core Web API, SQL Server, jQuery, Azure AD</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="fade-in">Get in Touch</h2>
-        <form action="https://formspree.io/f/your-email" method="POST" class="contact-form fade-in">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="cta">Send Message</button>
-        </form>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/your-email" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <a href="https://github.com/ganesh-dev" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ganesh-a-7926481ba/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://x.com/ganesh_dev" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+        <div class="footer-content">
+            <a href="https://github.com/ganesh-dev" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ganesh-a-7926481ba/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/ganesh_dev" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Ganesh A. All rights reserved.</p>
     </footer>
 
-    <script src="scripts/hero.js"></script>
     <script>
-        // Video toggle
-        function toggleVideo() {
-            const video = document.getElementById("background-video");
-            const toggle = document.querySelector(".video-toggle");
-            if (video.paused) {
-                video.play();
-                toggle.textContent = "⏯️";
-            } else {
-                video.pause();
-                toggle.textContent = "▶️";
-            }
-        }
-
-        // Modal Functions
-        function openModal(id) {
-            document.getElementById(id).style.display = "flex";
-        }
-        function closeModal(id) {
-            document.getElementById(id).style.display = "none";
-        }
-        window.onclick = function(event) {
-            const modals = document.getElementsByClassName("modal");
-            for (let i = 0; i < modals.length; i++) {
-                if (event.target === modals[i]) {
-                    modals[i].style.display = "none";
-                }
-            }
-        };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
